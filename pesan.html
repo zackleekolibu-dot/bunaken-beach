@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style1.css">
+    <title>Pesan Kunjungan - Wisata Bunaken</title>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="brand">Wisata Bunaken</div>
+      <nav class="site-nav">
+        <ul>
+          <li><a href="index.html">Beranda</a></li>
+          <li><a href="tentang.html">Tentang</a></li>
+          <li><a href="daya-tarik.html">Daya Tarik</a></li>
+          <li><a href="galeri.html">Galeri</a></li>
+          <li><a href="tiket.html">Tiket</a></li>
+          <li><a href="pesan.html">Pesan</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section id="pesan">
+        <h2>Pesan Kunjungan</h2>
+        <form action="#" method="post">
+          <fieldset>
+            <legend>Data Pengunjung</legend>
+
+            <label for="nama">Nama</label>
+            <input type="text" id="nama" name="nama" required />
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required />
+
+            <label for="tgl">Tanggal Kunjungan</label>
+            <input type="date" id="tgl" name="tgl" />
+
+            <label for="jml">Jumlah Orang</label>
+            <input type="number" id="jml" name="jml" min="1" max="20" />
+
+            <label for="paket">Paket</label>
+            <select id="paket" name="paket">
+              <option>Snorkeling</option>
+              <option>Diving</option>
+              <option>Island Tour</option>
+            </select>
+
+            <label for="catatan">Catatan</label>
+            <textarea id="catatan" name="catatan" rows="3"></textarea>
+
+            <button type="submit">Kirim Pesanan</button>
+          </fieldset>
+        </form>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>Dikelola oleh Kelas Web Design</p>
+      <p>Email: <a href="mailto:info@bunaken.example">info@bunaken.example</a></p>
+      <p>Telp: <a href="tel:+62431000000">0812-4834-0906</a></p>
+      <a href="https://instagram.com" target="_blank" rel="noopener">Instagram</a>
+    </footer>
+  </body>
+</html>
